@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Movies - Titanic Profiles</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e3f2fd; /* light blue background */
+            font-family: 'Roboto', Arial, sans-serif;
+            color: #263238;
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            color: #1976d2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container-div {
+            width: 85%;
+            background-color: #ffffff;
+            border: 2px solid #1976d2;
+            box-shadow: 0 4px 16px rgba(25, 118, 210, 0.15);
+            border-radius: 16px;
+            margin: 32px auto 24px auto;
+            padding: 32px 24px;
+            transition: background 0.3s, box-shadow 0.3s;
+        }
+        .container-div:hover {
+            background-color: #bbdefb;
+            box-shadow: 0 8px 32px rgba(25, 118, 210, 0.25);
+        }
+        img.logo {
+            width: 120px;
+            display: block;
+            margin-bottom: 12px;
+        }
+        h1, h2 {
+            color: #1565c0;
+            margin-top: 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        .movie-img {
+            width: 220px;
+            border-radius: 8px;
+            margin: 16px 0;
+            box-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
+        }
+        @media (max-width: 700px) {
+            .container-div {
+                width: 98%;
+                padding: 16px 6px;
+            }
+            .movie-img {
+                width: 100%;
+                max-width: 320px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Link -->
+    <div class="container-div" style="padding: 12px 24px;">
+        <a href="index.html">Assignment 1 - Characters</a> |
+        <a href="assign2.html">Assignment 2 - Movie Profiles</a>
+    </div>
+
+    <!-- First Div: Logo and Main Heading -->
+    <div class="container-div">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6e/Titanic_Logo.png" alt="Titanic Logo" class="logo">
+        <h1>The Movies - Titanic Profiles</h1>
+    </div>
+
+    <!-- Second Div: First Movie -->
+    <div class="container-div">
+        <h2>Titanic (1997)</h2>
+        <p><strong>Release Year:</strong> 1997<br>
+           <strong>Director:</strong> James Cameron<br>
+           <strong>Production Company:</strong> 20th Century Fox, Paramount Pictures, Lightstorm Entertainment
+        </p>
+        <img src="https://upload.wikimedia.org/wikipedia/en/2/2e/Titanic_poster.jpg" alt="Titanic 1997 Poster" class="movie-img">
+        <p>
+            Titanic is a romantic drama set against the ill-fated maiden voyage of the RMS Titanic. The film follows Jack and Rose, two passengers from different social classes who fall in love aboard the ship. Their romance is tested by the tragic sinking of the Titanic after it strikes an iceberg.
+            <br>
+            <a href="https://en.wikipedia.org/wiki/Titanic_(1997_film)">Source: Wikipedia</a>
+        </p>
+    </div>
+
+    <!-- Third Div: Favourite Movie -->
+    <div class="container-div">
+        <h2>Titanic (1953)</h2>
+        <p><strong>Release Year:</strong> 1953<br>
+           <strong>Director:</strong> Jean Negulesco<br>
+           <strong>Production Company:</strong> 20th Century Fox
+        </p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Titanic_%281953_film%29_poster.jpg" alt="Titanic 1953 Poster" class="movie-img">
+        <p>
+            This earlier adaptation of the Titanic disaster focuses on the lives and relationships of several passengers as the ship makes its doomed voyage. The film explores themes of love, sacrifice, and survival as the tragedy unfolds.
+            <br>
+            <a href="https://en.wikipedia.org/wiki/Titanic_(1953_film)">Source: Wikipedia</a>
+        </p>
+    </div>
+
+    <!-- Fourth Div: Other Movies in the Series -->
+    <div class="container-div">
+        <h2>Other Movies in the Series</h2>
+        <ul>
+            <li><strong>A Night to Remember</strong> (1958) – Director: Roy Ward Baker, Company: The Rank Organisation</li>
+            <li><strong>Raise the Titanic</strong> (1980) – Director: Jerry Jameson, Company: ITC Entertainment</li>
+            <li><strong>Titanic II</strong> (2010) – Director: Shane Van Dyke, Company: The Asylum</li>
+            <li><strong>Titanic: The Legend Goes On</strong> (2000) – Director: Camillo Teti, Company: Medusa Film</li>
+        </ul>
+    </div>
+</body>
+</html>
