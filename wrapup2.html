@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Brawlers</title>
+    <style>
+        body { margin:0; font-family:Arial,sans-serif; background-color:#f9f9f9; color:#333; }
+        nav { background-color:#0055cc; padding:15px; text-align:center; box-shadow:0 4px 8px rgba(0,0,0,0.2); }
+        nav a { color:#ffd700; margin:15px; text-decoration:none; font-weight:bold; font-size:18px; transition:all 0.3s ease; }
+        nav a:hover { color:#ff4d4d; text-shadow:0 0 8px #ff4d4d; }
+        .container { margin:40px auto; width:90%; background-color:#fff; padding:25px; border-radius:12px; box-shadow:0 4px 12px rgba(0,0,0,0.1); }
+        h1 { color:#0055cc; text-shadow:1px 1px #ccc; text-align:center; }
+        .brawler-list { display:flex; flex-wrap:wrap; gap:10px; justify-content:center; }
+        .brawler-button { background-color:#0055cc; color:#ffd700; padding:8px 12px; border:none; border-radius:8px; cursor:pointer; font-weight:bold; transition:all 0.3s ease; }
+        .brawler-button:hover { background-color:#ff4d4d; color:#fff; }
+        .brawler-info { display:none; text-align:center; margin-top:20px; }
+        .brawler-info img { border-radius:10px; margin:10px; width:200px; }
+        footer { background-color:#0055cc; text-align:center; padding:10px; margin-top:30px; color:#ffd700; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="WrapUpHome.html">Home</a>
+        <a href="WrapUp2.html">Brawlers</a>
+        <a href="WrapUp3.html">Game Modes</a>
+        <a href="WrapUp4.html">Why I Love</a>
+        <a href="reference.html">References</a>
+    </nav>
+
+    <div class="container">
+        <h1>All Brawlers</h1>
+        <p>Click on a brawler’s name to see their picture and a short description. This list follows the order you requested.</p>
+
+        <div class="brawler-list">
+            <button class="brawler-button" onclick="showBrawler('shelly')">Shelly</button>
+            <button class="brawler-button" onclick="showBrawler('colt')">Colt</button>
+            <button class="brawler-button" onclick="showBrawler('nita')">Nita</button>
+            <button class="brawler-button" onclick="showBrawler('bull')">Bull</button>
+            <button class="brawler-button" onclick="showBrawler('brock')">Brock</button>
+            <button class="brawler-button" onclick="showBrawler('dynamike')">Dynamike</button>
+            <button class="brawler-button" onclick="showBrawler('bo')">Bo</button>
+            <button class="brawler-button" onclick="showBrawler('rico')">Rico</button>
+            <button class="brawler-button" onclick="showBrawler('barley')">Barley</button>
+            <button class="brawler-button" onclick="showBrawler('elprimo')">El Primo</button>
+            <button class="brawler-button" onclick="showBrawler('poco')">Poco</button>
+            <button class="brawler-button" onclick="showBrawler('rosa')">Rosa</button>
+            <button class="brawler-button" onclick="showBrawler('jacky')">Jacky</button>
+            <button class="brawler-button" onclick="showBrawler('8bit')">8‑Bit</button>
+            <button class="brawler-button" onclick="showBrawler('mortis')">Mortis</button>
+            <button class="brawler-button" onclick="showBrawler('frank')">Frank</button>
+            <button class="brawler-button" onclick="showBrawler('bibi')">Bibi</button>
+            <button class="brawler-button" onclick="showBrawler('larrylawrie')">Larry & Lawrie</button>
+        </div>
+
+        <!-- Info Sections -->
+        <div id="shelly" class="brawler-info"><img src="shelly.jpg"><p>Shelly blasts enemies with her shotgun, perfect for beginners.</p></div>
+        <div id="colt" class="brawler-info"><img src="colt.jpg"><p>Colt fires long-range pistols with precision and power.</p></div>
+        <div id="nita" class="brawler-info"><img src="nita.jpg"><p>Nita summons her bear Bruce to fight alongside her.</p></div>
+        <div id="bull" class="brawler-info"><img src="bull.jpg"><p>Bull charges forward with his shotgun and brute strength.</p></div>
+        <div id="brock" class="brawler-info"><img src="brock.jpg"><p>Brock launches rockets that explode on impact.</p></div>
+        <div id="dynamike" class="brawler-info"><img src="dynamike.jpg"><p>Dynamike throws dynamite sticks to blast enemies.</p></div>
+        <div id="bo" class="brawler-info"><img src="bo.jpg"><p>Bo shoots explosive arrows and lays mines to control space.</p></div>
+        <div id="rico" class="brawler-info"><img src="rico.jpg"><p>Rico’s bullets bounce off walls to hit hidden enemies.</p></div>
+        <div id="barley" class="brawler-info"><img src="barley.jpg"><p>Barley throws bottles of poison that spread across the ground.</p></div>
+        <div id="elprimo" class="brawler-info"><img src="elprimo.jpg"><p>El Primo slams enemies with his fists and leaps into battle.</p></div>
+        <div id="poco" class="brawler-info"><img src="poco.jpg"><p>Poco heals allies with his music while damaging foes.</p></div>
+        <div id="rosa" class="brawler-info"><img src="rosa.jpg"><p>Rosa uses her gloves to punch enemies and shield herself.</p></div>
+        <div id="jacky" class="brawler-info"><img src="jacky.jpg"><p>Jacky shakes the ground with her jackhammer to damage foes.</p></div>
+        <div id="8bit" class="brawler-info"><img src="8bit.jpg"><p>8‑Bit fires laser beams and boosts allies with his arcade station.</p></div>
+        <div id="mortis" class="brawler-info"><img src="mortis.jpg"><p>Mortis dashes forward with his shovel, striking quickly.</p></div>
+        <div id="frank" class="brawler-info"><img src="frank.jpg"><p>Frank smashes the ground with his hammer to stun enemies.</p></div>
+        <div id="bibi" class="brawler-info"><img src="bibi.jpg"><p>Bibi swings her bat to knock back enemies with style.</p></div>
+        <div id="larrylawrie" class="brawler-info"><img src="larrylawrie.jpg"><p>Larry & Lawrie alternate attacks in unpredictable patterns.</p></div>
+    </div>
+
+    <footer>© 2026 Brawl Stars Fan Project | Made by Jonathan</footer>
+
+    <script>
+        function showBrawler(id) {
+            var infos = document.getElementsByClassName('brawler-info');
+            for (var i = 0; i < infos.length; i++) {
+                infos[i].style.display = 'none';
+            }
+            document.getElementById(id).style.display = 'block';
+        }
+    </script>
+</body>
+</html>
